@@ -4,7 +4,7 @@
 <title>Football News Daily</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="Styles.css">
+<link rel="stylesheet" href="index.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -12,11 +12,12 @@
 <header>
 <div class="topnav" id="myTopnav">
   <a href="https://broberts98.github.io/FND3.0/index.html">Home</a>
-  <div class="dropdown">
-    <button class="dropbtn">NCAA
+  
+  <div class="dropdown" >
+    <button class="dropbtn something" >NCAA
       <i class="fa fa-caret-down"></i>
     </button>
-    <div class="dropdown-content">
+    <div class="dropdown-content something"> 
       <a href="https://broberts98.github.io/Stats/Top25.html">Top 25</a>
       <a href="https://broberts98.github.io/Stats/Top25.html">Conference Standings</a>
       <a href="https://broberts98.github.io/Stats/Top25.html">Scores</a>
@@ -24,16 +25,17 @@
     </div>
   </div> 
   <div class="dropdown">
-    <button class="dropbtn">NFL 
+    <button class="dropbtn something">NFL 
       <i class="fa fa-caret-down"></i>
     </button>
-    <div class="dropdown-content">
+    <div class="dropdown-content something">
       <a href="https://broberts98.github.io/Stats/Top25.html">Power Rankings</a>
       <a href="https://broberts98.github.io/Stats/Top25.html">Divison Standings</a>
       <a href="https://broberts98.github.io/Stats/Top25.html">Scores</a>
       <a href="https://broberts98.github.io/Stats/Top25.html">News</a>
     </div>
   </div>
+
   <a href="https://broberts98.github.io/FND3.0/Apply.html">Contact/Apply</a>
   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
   <div class="align-right">
@@ -42,5 +44,18 @@
   </div>
 </div>
 </header>
+
+<script>
+    function myFunction() {
+        var elems = document.getElementsByClassName("something");
+        for (x of elems) {
+                if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    }
+</script>
 </body>
 </html>
